@@ -26,6 +26,14 @@
                     alert("Operador Inválido")
             }
         }
+        
+        let operator = prompt("Escolha um desses operadores [+, -, /, *] ");
+        let number1 = parseFloat(prompt("Insira o primeiro número"));
+        let number2 = parseFloat(prompt("Insira o segundo número"));
+
+        let resultadoCalculo = calcular(operator, number1, number2);
+
+        document.getElementById("resultado").innerHTML = `Resultado: ${resultadoCalculo}`;
  </script>
 </body>
 
